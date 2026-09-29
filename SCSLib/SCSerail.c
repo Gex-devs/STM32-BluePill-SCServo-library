@@ -5,7 +5,6 @@
  * Author: 
  */
 
-#include "stm32f1xx.h"
 #include "uart_hd.h"
 
 const uint32_t IOTimeOut = 5000;//Communication timeout

@@ -8,9 +8,10 @@
 #ifndef SCSLIB_UART_HD_H_
 #define SCSLIB_UART_HD_H_
 
-#include "stm32f1xx.h"
 
-extern void USART_HD_PostInit(USART_TypeDef* USARTx);
+#include "stm32f4xx_hal.h"
+
+extern void USART_HD_Init(UART_HandleTypeDef* USARTx, uint8_t* RxBuffer);
 extern void USART_HD_IRQHandler();
 
 extern void USART_HD_BufferFlush(void);
